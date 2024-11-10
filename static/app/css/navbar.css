@@ -28,7 +28,7 @@ body {
     font-weight: bold;
     color: #222;
     align-items: center;
-    margin-bottom:50px;
+    margin-bottom:100px;
 }
 
 .sticky-part .frame {
@@ -39,7 +39,7 @@ body {
     padding: 10px 15px;
     margin: 5px 0;
     cursor: pointer;
-    padding-left: 25px; 
+    padding-left: 35px; 
 }
 
 .sticky-part .frame.logout {
@@ -112,7 +112,7 @@ body {
 
 .search-for-musics-artists {
     color: #000000; 
-    font-family: "Vazirmatn-Light", sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 15px;
     font-weight: 300;
     opacity: 0.6;

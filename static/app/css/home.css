@@ -6,7 +6,7 @@ body {
   .top-header {
     display: flex;
     align-items: center;
-    font-family: "Vazirmatn-Bold", sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 25px;
     justify-content: space-between;
   }
@@ -15,9 +15,10 @@ body {
     color: #333;
     font-size: 30px;
     font-weight: 400;
+    font-family: "Times New Roman", Times, serif;
   }
   .view-all {
-    font-family: "CircularStd-Book", sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 25px;
     font-weight: 400;
     color: #48D1CC; 
@@ -28,12 +29,12 @@ body {
 .view-all:hover {
     text-decoration: underline;
 }
-
+/* Bài hát */
 .list-mix-container {
     height: 480px; 
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 5px; 
     overflow: hidden;
   }
 
@@ -45,8 +46,9 @@ body {
     color: #333;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
+ 
   .bai-hat {
     display: flex;
     flex-direction: column;
@@ -59,7 +61,8 @@ body {
   }
   .ten-bh {
     text-align: left;
-    font-family: "CircularStd-Book", sans-serif;
+    font-family: "Times New Roman", Times, serif;
+    color: #222;
     font-size: 20px;
     letter-spacing: 0.01em;
     font-weight: 400;
@@ -67,9 +70,9 @@ body {
     width: 210px;
   }
   .nghe-si {
-    color: #b3b3b3;
+    color: #4d4d4d;
     text-align: left;
-    font-family: "CircularStd-Book", sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     font-weight: 400;
     position: relative;
@@ -77,7 +80,7 @@ body {
   }
   .the-loai {
     text-align: left;
-    font-family: "CircularStd-Book", sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     font-weight: 400;
     position: absolute;
@@ -96,7 +99,7 @@ body {
   .thoi-gian{
     color: #333;
     text-align: left;
-    font-family: "CircularStd-Book", sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 20px;
     letter-spacing: -0.03em;
     font-weight: 400;
@@ -104,14 +107,7 @@ body {
     right: 63px;
     top: 23px;
   }
-  .component-3 {
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    left: 20px;
-    top: 22px;
-    overflow: visible;
-  }
+
   .so-tt {
   font-size: 24px; 
   font-weight: bold; 
@@ -125,6 +121,7 @@ body {
   left: 40px;
 }
 
+/* Playlist */
 .playlist {
     display: flex;
     flex-direction: column;
@@ -165,8 +162,8 @@ body {
 }
 
 .list-title {
-    font-family: "Vazirmatn-Medium", sans-serif;
-    font-size: 14px; 
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px; 
     font-weight: 500;
     color: #ffffff; 
 }

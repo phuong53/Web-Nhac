@@ -1,0 +1,138 @@
+{% extends "app/navbar.html" %}
+
+{% load static %} 
+
+{% block main_content %}
+<link rel="stylesheet" href="{% static 'app/css/danhsachnhac.css' %}">
+
+    <div class="list-ns">
+      <div class="top-header">
+        <span class="highlight">Nghệ Sĩ</span>
+        <div class="show-more">Xem thêm</div> 
+      </div>
+      <div class="danhsach">
+          <div class="song-item">
+              <div class="song-image-wrapper">
+                  <img class="song-image" src="{% static 'app/images/playlist-1.jpg' %}"/>
+              </div>
+              <div class="song-info">
+                  <div class="song-title">Mỹ Tâm</div>
+              </div>
+          </div>
+          <div class="song-item">
+              <div class="song-image-wrapper">
+                  <img class="song-image" src="{% static 'app/images/playlist-1.jpg' %}"/>
+              </div>
+              <div class="song-info">
+                  <div class="song-title">Allan Walker</div>
+              </div>
+          </div>
+          <div class="song-item">
+              <div class="song-image-wrapper">
+                  <img class="song-image" src="{% static 'app/images/playlist-1.jpg' %}"/>
+              </div>
+              <div class="song-info">
+                  <div class="song-title">Phan Mạnh Quỳnh</div>
+              </div>
+          </div>
+          <div class="song-item">
+              <div class="song-image-wrapper">
+                  <img class="song-image" src="{% static 'app/images/playlist-1.jpg' %}"/>
+              </div>
+              <div class="song-info">
+                  <div class="song-title">Sơn Tùng MTP</div>
+              </div>
+          </div>
+          <div class="song-item">
+            <div class="song-image-wrapper">
+                <img class="song-image" src="{% static 'app/images/playlist-1.jpg' %}"/>
+            </div>
+            <div class="song-info">
+                <div class="song-title">Hồ Ngọc Hà</div>
+            </div>
+        </div>
+        <div class="song-item">
+          <div class="song-image-wrapper">
+              <img class="song-image" src="{% static 'app/images/playlist-1.jpg' %}"/>
+          </div>
+          <div class="song-info">
+              <div class="song-title">Hồ Ngọc Hà</div>
+          </div>
+      </div>
+      </div>  
+    </div>
+
+    <div class="top-header">
+        <span class="highlight">Danh sách bài hát </span> 
+    </div>
+  
+    <div class="list-mix-container">
+        <div class="list-mix-1">
+          <div class="bai-hat">
+            <div class="ten-bh">Đi giữa trời rực rỡ </div>
+            <div class="nghe-si">Ngô Lan Hương</div>
+          </div>
+          <div class="the-loai">Nhạc trẻ</div>
+          <img class="heart" src="{% static 'app/images/like.svg' %}" />
+          <div class="thoi-gian">2 : 12</div> 
+          <div class="so-tt">1</div> 
+        </div>
+
+        <div class="list-mix-1">
+            <div class="bai-hat">
+              <div class="ten-bh">Từng là</div>
+              <div class="nghe-si">Vũ Cát Tường</div>
+            </div>
+            <div class="the-loai">Chill</div>
+            <img class="heart" src="{% static 'app/images/like.svg' %}" />
+            <div class="thoi-gian">2 : 12</div>
+            <div class="so-tt">2</div> 
+        </div>
+
+        <div class="list-mix-1">
+            <div class="bai-hat">
+              <div class="ten-bh">Lao tâm khổ tứ </div>
+              <div class="nghe-si">Thanh Hưng</div>
+            </div>
+            <div class="the-loai">Nhạc trẻ</div>
+            <img class="heart" src="{% static 'app/images/like.svg' %}" />
+            <div class="thoi-gian">2 : 12</div>
+            <div class="so-tt">3</div> 
+        </div>
+
+        <div class="list-mix-1">
+          <div class="bai-hat">
+            <div class="ten-bh">Lao tâm khổ tứ </div>
+            <div class="nghe-si">Thanh Hưng</div>
+          </div>
+          <div class="the-loai">Nhạc trẻ</div>
+          <img class="heart" src="{% static 'app/images/like.svg' %}" />
+          <div class="thoi-gian">2 : 12</div>
+          <div class="so-tt">4</div> 
+        </div>
+
+        <div class="list-mix-1">
+          <div class="bai-hat">
+            <div class="ten-bh">Lao tâm khổ tứ </div>
+            <div class="nghe-si">Thanh Hưng</div>
+          </div>
+          <div class="the-loai">Nhạc trẻ</div>
+          <img class="heart" src="{% static 'app/images/like.svg' %}" />
+          <div class="thoi-gian">2 : 12</div>
+          <div class="so-tt">5</div> 
+        </div>
+
+        <div class="list-mix-1">
+          <div class="bai-hat">
+            <div class="ten-bh">Lao tâm khổ tứ </div>
+            <div class="nghe-si">Thanh Hưng</div>
+          </div>
+          <div class="the-loai">Nhạc trẻ</div>
+          <img class="heart" src="{% static 'app/images/like.svg' %}" />
+          <div class="thoi-gian">2 : 12</div>
+          <div class="so-tt">6</div> 
+        </div>
+    </div>
+
+
+{% endblock %}

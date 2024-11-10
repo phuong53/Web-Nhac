@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Web Nghe Nhạc</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'app/css/navbar.css' %}">
+    <style>
+        .sticky-part a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .header a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    
+    <div class="sticky-part">
+       <div class="title">Music</div>
+      
+        <a href="{% url 'app:home' %}" class="frame home">
+            <img class="icon" src="{% static 'app/images/home.png' %}" />
+            <div class="text">Trang chủ</div>
+        </a>
+        <a href="{% url 'app:danhsachnhac' %}" class="frame">
+            <img class="icon" src="{% static 'app/images/bar-chart-110.svg' %}" />
+            <div class="text">Danh sách nhạc</div>
+        </a>
+        <a href="{% url 'app:thuvien' %}" class="frame">
+            <img class="icon" src="{% static 'app/images/recent.svg' %}" />
+            <div class="text">Thư viện</div>
+        </a>
+        <div class="frame">
+            <img class="icon" src="{% static 'app/images/playlist.svg' %}" />
+            <div class="text">Tạo playlist</div>
+        </div>
+        <div class="frame logout">
+            <img class="icon" src="{% static 'app/images/log-out-030.svg' %}" />
+            <div class="text">Đăng xuất</div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header" style="background-image: url('{% static 'app/images/nen.jpg' %}');">
+            <div class="search-bar">
+                <img class="search" src="{% static 'app/images/icon0.svg' %}" />
+                <input type="text" class="search-for-musics-artists" placeholder="Search..." />
+            </div>
+            <div class="buttons">
+                <a href="{% url 'app:dangnhap' %}" class="button login">Login</a>
+                <a href="{% url 'app:dangky' %}" class="button signup">Sign Up</a>
+            </div>
+        </div>
+        
+        <div class="main">
+            {% block main_content %}
+            {% endblock %}
+            
+        </div>
+
+        
+    </div>
+    
+    <div class="music-pay-system">
+        <div class="controls">
+            <img class="vector" src="{% static 'app/images/lap.svg' %}" />
+            <img class="suffle-1" src="{% static 'app/images/mix.svg' %}" />      
+            <img class="next-1" src="{% static 'app/images/next-1.svg' %}" />
+            <img class="next-1" src="{% static 'app/images/stop.svg' %}" />
+            <img class="next-2" src="{% static 'app/images/next-2.svg' %}" />
+            <img class="like" src="{% static 'app/images/like.svg' %}" />
+            <img class="speaker-1" src="{% static 'app/images/volume.png' %}" />
+        </div>
+        <div class="time-info">
+            <div class="_0-51">0:51</div>
+            <div class="progress-bar"></div>
+            <div class="_1-41">1:41</div>
+        </div>
+    </div>
+    
+    
+  </div>
+</body>
+</html>

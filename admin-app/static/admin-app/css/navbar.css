@@ -18,7 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 15%;
-    background-color:#B0E0E6;
+    background-color:#F5F5F5;
     padding: 20px 0;
     flex-shrink: 0;
 }
@@ -28,7 +28,7 @@ body {
     font-weight: bold;
     color: #222;
     align-items: center;
-    margin-bottom:100px;
+    margin-bottom: 80px;
 }
 
 .sticky-part .frame {
@@ -43,7 +43,7 @@ body {
 }
 
 .sticky-part .frame.logout {
-    margin-top: 180px;
+    margin-top: 200px;
 }
 
 .sticky-part .frame .icon {
@@ -59,12 +59,12 @@ body {
 
 .sticky-part .frame:hover .icon,
 .sticky-part .frame:hover .text {
-    color: #ffffff; 
+    color: #48D1CC; 
 }
 
 
 .main {
-    padding: 20px 50px 100px;
+    padding: 20px 30px 100px;
     width:85%;
     overflow-y: 100%;
     overflow: hidden; 
@@ -82,8 +82,8 @@ body {
     align-items: top;
     justify-content: space-between;
     padding: 30px;
-    margin-bottom: 20px;
-    height: 160px; 
+    margin-bottom: 10px;
+    height: 40px; 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -143,69 +143,4 @@ body {
     color: #ffffff;
     background: #48D1CC;
     border: none;
-}
-
-.music-pay-system {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: #fff;
-    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
-    z-index: 1000; 
-}
-
-.controls {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 50%;
-}
-
-.controls img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain; 
-    padding: 20px;
-} 
-
-.music-pay-system img {
-    margin: 0 5px; 
-}
-
-.vector {
-    width: 24px;  
-    height: 24px; 
-}
-
-.time-info {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-._0-51, ._1-41 {
-    font-family: "Poppins-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-._1-41 {
-    color: #838383;
-}
-
-.progress-bar {
-    flex-grow: 1; 
-    height: 5px;
-    background: #575656;
-    border-radius: 10px;
-    margin: 0 10px; 
 }
